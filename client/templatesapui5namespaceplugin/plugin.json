@@ -1,0 +1,43 @@
+{
+    "name": "templatesapui5namespaceplugin",
+    "description": "Template SAPUI5 with correct Namespace Plugin",
+    "i18n": "templatesapui5namespaceplugin/i18n/i18n",
+    "requires": {
+        "services": [
+            "template",
+            "templateCustomizationStep"
+        ]
+    },
+    "provides": {
+        "services": {},
+        "interfaces": {}
+    },
+    "configures": {
+        "services": {
+            "template:templates": [
+                {
+                    "id": "TemplateSAPUI5Namespace.sapui5withcorrectnamespace",
+                    "template": "templatesapui5namespaceplugin/sapui5withcorrectnamespace/sapui5withcorrectnamespace",
+                    "name": "{i18n>Config_template_sapui5withcorrectnamespace_name}",
+                    "description": "{i18n>Config_template_sapui5withcorrectnamespace_desc}",
+                    "path": "templatesapui5namespaceplugin/sapui5withcorrectnamespace",
+                    "icon": "sap-icon://detail-view",
+                    "internalOnly": false,
+                    "category": "general",
+                    "wizardSteps": [
+                        "templateCustomizationStep"
+                    ],
+                    "templateType": "project",
+                    "requiresNeoApp": true,
+                    "version": "1.0.0",
+                    "orderPriority": 1000,
+                    "modelRoot": "basicSAPUI5ApplicationProject",
+                    "modelFileName": "model.json",
+                    "fileName": "resources.zip",
+                    "previewImage": "image/SAPUI5-Application.png"
+                }
+            ]
+        }
+    },
+    "subscribes": {}
+}

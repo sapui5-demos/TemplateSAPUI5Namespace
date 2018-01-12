@@ -1,0 +1,11 @@
+{
+	"name": "templatesapui5namespacefeature",
+	"title": "templatesapui5namespacefeature",
+	"version": "1.0.0",
+	"description": "Template SAPUI5 with correct Namespace Feature",
+	"homepage": "",
+	"icon": "",
+	"bundledPlugins": {
+		"templatesapui5namespaceplugin": "file:templatesapui5namespaceplugin"
+	}
+}
